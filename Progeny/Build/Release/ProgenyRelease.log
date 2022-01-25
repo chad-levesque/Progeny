@@ -1,0 +1,44 @@
+﻿Build started 9/23/2012 8:36:33 PM.
+     1>Project "C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Progeny.vcxproj" on node 3 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\".
+       InitializeBuildStatus:
+         Creating "C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\Progeny.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\Chad\Documents\progeny\ProjectProgeny\\..\LibNoise\include /IC:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\\Include\ /IC:\Users\Chad\Documents\progeny\ProjectProgeny\\MetricTools\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\\" /Fd"C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\vc100.pdb" /Gd /TP /wd4244 /wd4005 /analyze- /errorReport:prompt Source\MathTools.cpp Source\noiseutils.cpp Source\PgColorScheme.cpp Source\PgCraterModule.cpp Source\PgDiamond.cpp Source\PgPlanetModule.cpp Source\PgTerrainModule.cpp Source\PgPlanetStrategyFlat.cpp Source\PgPlanetStrategyRandom.cpp Source\PgROAMPlanet.cpp Source\PgTriangle.cpp Source\PgVertex.cpp Source\PgVertexArray.cpp
+         MathTools.cpp
+         noiseutils.cpp
+         PgColorScheme.cpp
+         PgCraterModule.cpp
+         PgDiamond.cpp
+         PgPlanetModule.cpp
+         PgTerrainModule.cpp
+         PgPlanetStrategyFlat.cpp
+         PgPlanetStrategyRandom.cpp
+         PgROAMPlanet.cpp
+         PgTriangle.cpp
+         PgVertex.cpp
+         PgVertexArray.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\ProgenyRelease.lib" /NOLOGO /LTCG C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\MathTools.obj
+         C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\noiseutils.obj
+         C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\PgColorScheme.obj
+         C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\PgCraterModule.obj
+         C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\PgDiamond.obj
+         C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\PgPlanetModule.obj
+         C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\PgTerrainModule.obj
+         C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\PgPlanetStrategyFlat.obj
+         C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\PgPlanetStrategyRandom.obj
+         C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\PgROAMPlanet.obj
+         C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\PgTriangle.obj
+         C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\PgVertex.obj
+         C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\PgVertexArray.obj
+         Progeny.vcxproj -> C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\ProgenyRelease.lib
+       FinalizeBuildStatus:
+         Deleting file "C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\Progeny.unsuccessfulbuild".
+         Touching "C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Build\Release\Intermediate\Progeny.lastbuildstate".
+     1>Done Building Project "C:\Users\Chad\Documents\progeny\ProjectProgeny\Progeny\Progeny.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.97

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F863F8EB-7068-42CE-82D8-2FC1B86896E5}</ProjectGuid>
+    <RootNamespace>Progeny</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)Build\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)Intermediate\</IntDir>
+    <TargetName>$(ProjectName)$(Configuration)</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)Build\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)Intermediate\</IntDir>
+    <TargetName>$(ProjectName)$(Configuration)</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\LibNoise\include;$(ProjectDir)\Include\;$(SolutionDir)\MetricTools\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <BuildLog>
+      <Path>$(OutDir)$(ProjectName)$(Configuration).log</Path>
+    </BuildLog>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\LibNoise\include;$(ProjectDir)\Include\;$(SolutionDir)\MetricTools\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244; 4005;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <BuildLog>
+      <Path>$(OutDir)$(ProjectName)$(Configuration).log</Path>
+    </BuildLog>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\MathTools.cpp" />
+    <ClCompile Include="Source\noiseutils.cpp" />
+    <ClCompile Include="Source\PgColorScheme.cpp" />
+    <ClCompile Include="Source\PgCraterModule.cpp" />
+    <ClCompile Include="Source\PgDiamond.cpp" />
+    <ClCompile Include="Source\PgPlanetModule.cpp" />
+    <ClCompile Include="Source\PgTerrainModule.cpp" />
+    <ClCompile Include="Source\PgPlanetStrategyFlat.cpp" />
+    <ClCompile Include="Source\PgPlanetStrategyRandom.cpp" />
+    <ClCompile Include="Source\PgROAMPlanet.cpp" />
+    <ClCompile Include="Source\PgTriangle.cpp" />
+    <ClCompile Include="Source\PgVertex.cpp" />
+    <ClCompile Include="Source\PgVertexArray.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\IPgCamera.h" />
+    <ClInclude Include="Include\IPgRenderable.h" />
+    <ClInclude Include="Include\IPgRenderer.h" />
+    <ClInclude Include="Include\LinkedList.h" />
+    <ClInclude Include="Include\MathTools.h" />
+    <ClInclude Include="Include\noiseutils.h" />
+    <ClInclude Include="Include\PgColorScheme.h" />
+    <ClInclude Include="Include\PgConstants.h" />
+    <ClInclude Include="Include\PgCraterModule.h" />
+    <ClInclude Include="Include\PgDiamond.h" />
+    <ClInclude Include="Include\PgPlanetAttributes.h" />
+    <ClInclude Include="Include\PgPlanetModule.h" />
+    <ClInclude Include="Include\PgTerrainModule.h" />
+    <ClInclude Include="Include\PgPlanetStrategy.h" />
+    <ClInclude Include="Include\PgPlanetStrategyFlat.h" />
+    <ClInclude Include="Include\PgPlanetStrategyRandom.h" />
+    <ClInclude Include="Include\PgROAMPlanet.h" />
+    <ClInclude Include="Include\PgTriangle.h" />
+    <ClInclude Include="Include\PgVector3.h" />
+    <ClInclude Include="Include\PgVertex.h" />
+    <ClInclude Include="Include\PgVertexArray.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
